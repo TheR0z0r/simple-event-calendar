@@ -1,0 +1,9 @@
+.sec-events-container .sec-pagination a, .sec-events-container .sec-pagination .current{
+    display:inline-block;
+    padding:0.2rem;
+    text-align:center;
+}
+
+.sec-widget .sec-widget-date{
+    color: #212529;
+}

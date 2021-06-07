@@ -1,0 +1,150 @@
+# Translation of
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Event Calendar 1.0\n"
+"Report-Msgid-Bugs-To: juho@jtaskila.fi\n"
+"POT-Creation-Date: 2021-05-20 13:05+0300\n"
+"PO-Revision-Date: 2021-05-20 13.11+0200\n"
+"Last-Translator: Juho Taskila <juho@jtaskila.fi>\n"
+"Language-Team: \n"
+"Language: fi_FI\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1;  plural=EXPRESSION;\n"
+"X-Generator: Eazy Po 0.9.5.3\n"
+
+#: simple-event-calendar.php:32
+msgctxt "post type general name"
+msgid "Events"
+msgstr "Tapahtumat"
+
+#: simple-event-calendar.php:33
+msgctxt "post type singular name"
+msgid "Event"
+msgstr "Tapahtuma"
+
+#: simple-event-calendar.php:34
+msgctxt "event"
+msgid "Add New"
+msgstr "Lisää uusi"
+
+#: simple-event-calendar.php:35
+msgid "Add New Event"
+msgstr "Lisää uusi tapahtuma"
+
+#: simple-event-calendar.php:36
+msgid "Edit Event"
+msgstr "Muokkaa tapahtumaa"
+
+#: simple-event-calendar.php:37
+msgid "New Event"
+msgstr "Uusi tapahtuma"
+
+#: simple-event-calendar.php:38
+msgid "All Events"
+msgstr "Kaikki tapahtumat"
+
+#: simple-event-calendar.php:39
+msgid "View Event"
+msgstr "Näytä tapahtuma"
+
+#: simple-event-calendar.php:40
+msgid "Search Events"
+msgstr "Etsi tapahtumia"
+
+#: simple-event-calendar.php:41 templates/archive-events.php:83
+#: templates/single-events.php:47
+msgid "No events found"
+msgstr "Yhtään tapahtumaa ei löytynyt"
+
+#: simple-event-calendar.php:42
+msgid "No events found in the Trash"
+msgstr "Yhtään tapahtumaa ei löytynyt roskakorista"
+
+#: simple-event-calendar.php:44
+msgid "Events"
+msgstr "Tapahtumat"
+
+#: simple-event-calendar.php:48 templates/archive-events.php:41
+msgid "Upcoming events"
+msgstr "Tulevat tapahtumat"
+
+#: include/sec-functions.php:216
+msgid "multiple days"
+msgstr "useampi päivä"
+
+#: include/sec-meta-boxes.php:17
+msgid "Events date and time"
+msgstr "Tapahtuman päivämäärä ja aika"
+
+#: include/sec-meta-boxes.php:24
+msgid "Events venue and address info"
+msgstr "Tapahtumapaikka ja osoitetiedot"
+
+#: include/sec-meta-boxes.php:40
+msgid "Date"
+msgstr "Päivämäärä"
+
+#: include/sec-meta-boxes.php:46
+msgid "Time"
+msgstr "Aika"
+
+#: include/sec-meta-boxes.php:52
+msgid "Leave the time blank if the event lasts a whole day."
+msgstr "Jätä aika tyhjäksi, jos tapahtuma kestää koko päivän."
+
+#: include/sec-meta-boxes.php:65
+msgid "Venue name"
+msgstr "Tapahtumapaikan nimi"
+
+#: include/sec-meta-boxes.php:69
+msgid "Address"
+msgstr "Osoite"
+
+#: include/sec-meta-boxes.php:73
+msgid "Postal Code"
+msgstr "Postinumero"
+
+#: include/sec-meta-boxes.php:77
+msgid "City"
+msgstr "Kaupunki"
+
+#: include/sec-meta-boxes.php:81
+msgid "Map link"
+msgstr "Karttalinkki"
+
+#: include/sec-meta-boxes.php:85
+msgid "Specify the venues address info, all fields are optional."
+msgstr "Syötä tapahtumapaikan tiedot, kaikki kentät ovat valinnaisia."
+
+#: include/sec-meta-boxes.php:86
+msgid ""
+"Map link can be any shareable map link containing the address. Or a zoom or "
+"teams invite link."
+msgstr ""
+"Karttalinkki voi olla mikä tahansa jaettava osoitelinkki. Tai "
+"vaihtoehtoisesti zoom- tai teams-kutsu."
+
+#: templates/archive-events.php:39
+msgid "Past events"
+msgstr "Menneet tapahtumat"
+
+#: templates/archive-events.php:90
+msgid "Show upcoming events"
+msgstr "Näytä tulevat tapahtumat"
+
+#: templates/archive-events.php:92
+msgid "Show past events"
+msgstr "Näytä menneet tapahtumat"
+
+#: templates/single-events.php:17
+msgid "Date and time"
+msgstr "Päivämäärä ja aika"
+
+#: templates/single-events.php:31
+msgid "Location"
+msgstr "Paikka"

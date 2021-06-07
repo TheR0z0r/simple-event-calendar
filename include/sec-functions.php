@@ -244,4 +244,16 @@
 
         return "";
     }
+
+    // @return boolean
+    function sec_has_venue(){
+        global $post;
+        $post_id = $post -> ID;
+
+        if( get_post_meta( $post_id, 'sec_event_venue', true ) && !empty(get_post_meta( $post_id, 'sec_event_venue', true )) ){
+            return true;
+        }
+
+        return false;
+    }
 ?>

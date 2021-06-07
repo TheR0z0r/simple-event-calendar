@@ -35,7 +35,7 @@
 
     $events = new WP_Query( $args );
 ?>
-<div class="container sec-events-container">
+<div class="container sec-events-container sec-archive-events">
 
     <?php if( isset( $_GET['action'] ) && $_GET['action'] == 'past'): ?>
         <h1><?php _e('Past events', 'simple-event-calendar'); ?></h1>
@@ -45,18 +45,18 @@
 
     <div class="row pt-4">
         <?php if($events->have_posts()) : while($events->have_posts()) : $events->the_post(); ?>
-            <div class="col-lg-6 col-md-12 pb-4">
-                <div class="card">
+            <div class="col-lg-6 col-md-12 pb-4 sec-archive-card-container">
+                <div class="card sec-archive-card">
                     <?php if( has_post_thumbnail() ): ?>
-                        <img class="card-img-top" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="Card image cap">
+                        <img class="card-img-top sec-featured-image" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="Card image cap">
                     <?php endif; ?>
 
-                    <div class="card-body">
-                        <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <div class="card-body sec-card-body">
+                        <h2 class="entry-title sec-card-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                         <p><?php echo wp_trim_words(get_the_content(), 16, '...'); ?></p>
-                        <div class="row align-items-end">
+                        <div class="row align-items-end sec-card-footer">
                             <div class="col-7">
-                                <p class="mb-0">
+                                <p class="mb-0 sec-card-datetime">
                                     <?php if ( sec_has_start_date() ): ?>
                                         <i class="far fa-calendar-alt"></i> <?php echo sec_date(); ?>
                                     <?php endif; ?>
@@ -67,11 +67,13 @@
                                 </p>
                             </div>
                             <div class="col-5">
-                                <p class="mb-0 text-right">
-                                    <?php if( sec_has_maplink() ): ?>
-                                        <a target="_blank" href="<?php echo sec_maplink(); ?>"><i class="fas fa-map-marker-alt"></i> <?php echo get_post_meta( get_the_ID(), 'sec_event_venue', true); ?></a>
-                                    <?php else: ?>
-                                        <i class="fas fa-map-marker-alt"></i> <?php echo get_post_meta( get_the_ID(), 'sec_event_venue', true); ?>
+                                <p class="mb-0 text-right sec-card-venue">
+                                    <?php if( sec_has_venue() ): ?>
+                                        <?php if( sec_has_maplink() ): ?>
+                                            <a target="_blank" href="<?php echo sec_maplink(); ?>"><i class="fas fa-map-marker-alt"></i> <?php echo get_post_meta( get_the_ID(), 'sec_event_venue', true); ?></a>
+                                        <?php else: ?>
+                                            <i class="fas fa-map-marker-alt"></i> <?php echo get_post_meta( get_the_ID(), 'sec_event_venue', true); ?>
+                                        <?php endif; ?>
                                     <?php endif; ?>
                                 </p>
                             </div>
@@ -81,7 +83,7 @@
             </div>
 
         <?php endwhile; else: ?>
-            <div class="col-12">
+            <div class="col-12 sec-nothing-found">
                 <h3><?php _e('No events found', 'simple-event-calendar'); ?></h3>
             </div>
         <?php endif; ?>
@@ -109,9 +111,9 @@
     <hr>
 
     <?php if( isset( $_GET['action'] ) && $_GET['action'] == 'past'): ?>
-        <p class="text-center"><a href="?action=incoming"><?php _e('Show upcoming events', 'simple-event-calendar'); ?></a></p>
+        <p class="text-center sec-upcoming-link-container"><a class="sec-upcoming-link" href="?action=incoming"><?php _e('Show upcoming events', 'simple-event-calendar'); ?></a></p>
     <?php else: ?>
-        <p class="text-center"><a href="?action=past"><?php _e('Show past events', 'simple-event-calendar'); ?></a></p>
+        <p class="text-center sec-past-link-container"><a class="sec-past-link" href="?action=past"><?php _e('Show past events', 'simple-event-calendar'); ?></a></p>
     <?php endif; ?>
 
 </div>

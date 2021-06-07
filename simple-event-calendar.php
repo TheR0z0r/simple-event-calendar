@@ -95,7 +95,11 @@
 
 
     function sec_dependencies(){
-        wp_enqueue_style( 'simple-event-calendar-css', plugins_url( 'css/simple-event-calendar.css', __FILE__) );
+        wp_enqueue_style( 'bootstrap', plugins_url('css/bootstrap/bootstrap.min.css', __FILE__ ) );
+        wp_enqueue_style( 'font-awesome', plugins_url('css/fontawesome/css/all.min.css', __FILE__ ) );
+        wp_enqueue_style( 'simple-event-calendar', plugins_url( 'css/simple-event-calendar.css', __FILE__ ) );
+
+        wp_enqueue_script( 'bootstrap', plugins_url('js/bootstrap/bootstrap.min.js', __FILE__), array('jquery'), true);
     }
 
     add_action( 'wp_enqueue_scripts', 'sec_dependencies' );

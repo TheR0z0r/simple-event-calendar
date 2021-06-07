@@ -2,7 +2,8 @@
 Event Calendar plugin for Wordpress which uses only native functions of wordpress.
 
 # Installation
-Just download the repository and drop simple-event-calendar to /wp-content/plugins
+Just download the repository and drop simple-event-calendar to /wp-content/plugins  
+*Note: You may have to rename the folder which comes in the .zip-file and remove the "-main" -part.*
 
 # Languages
 Plugin currently supports the following languages:

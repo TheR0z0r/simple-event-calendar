@@ -1,75 +1,78 @@
-# Translation of
+# SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: Simple Event Calendar 1.0\n"
-"Report-Msgid-Bugs-To: juho@jtaskila.fi\n"
-"POT-Creation-Date: 2021-05-20 13:05+0300\n"
-"PO-Revision-Date: 2021-05-20 14.30+0200\n"
-"Last-Translator: \n"
-"Language-Team: \n"
-"Language: sv_SE\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-09 12.34+0200\n"
+"PO-Revision-Date: 2021-06-09 12.37+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: plurals=2; plural=(n > 1)\n"
+"Plural-Forms: \n"
 "X-Generator: Eazy Po 0.9.5.3\n"
 
-#: simple-event-calendar.php:32
+#: simple-event-calendar.php:52
 msgctxt "post type general name"
 msgid "Events"
 msgstr "Händelser"
 
-#: simple-event-calendar.php:33
+#: simple-event-calendar.php:53
 msgctxt "post type singular name"
 msgid "Event"
 msgstr "Händelse"
 
-#: simple-event-calendar.php:34
+#: simple-event-calendar.php:54
 msgctxt "event"
 msgid "Add New"
 msgstr "Lägg till ny "
 
-#: simple-event-calendar.php:35
+#: simple-event-calendar.php:55
 msgid "Add New Event"
 msgstr "Lägg till ny händelse "
 
-#: simple-event-calendar.php:36
+#: simple-event-calendar.php:56
 msgid "Edit Event"
 msgstr "Redigera händelse "
 
-#: simple-event-calendar.php:37
+#: simple-event-calendar.php:57
 msgid "New Event"
 msgstr "Ny händelse"
 
-#: simple-event-calendar.php:38
+#: simple-event-calendar.php:58
 msgid "All Events"
 msgstr "Alla händelser "
 
-#: simple-event-calendar.php:39
+#: simple-event-calendar.php:59
 msgid "View Event"
 msgstr "Visa händelse "
 
-#: simple-event-calendar.php:40
+#: simple-event-calendar.php:60
 msgid "Search Events"
 msgstr "Sök händelser"
 
-#: simple-event-calendar.php:41 templates/archive-events.php:83
-#: templates/single-events.php:47
+#: simple-event-calendar.php:61 include/sec-widget.php:72
+#: include/sec-widget.php:163 templates/archive-events.php:87
+#: templates/single-events.php:48
 msgid "No events found"
 msgstr "Inga händelser hittades "
 
-#: simple-event-calendar.php:42
+#: simple-event-calendar.php:62
 msgid "No events found in the Trash"
 msgstr "Inga händelser hittades "
 
-#: simple-event-calendar.php:44
+#: simple-event-calendar.php:64
 msgid "Events"
 msgstr "Händelser"
 
-#: simple-event-calendar.php:48 templates/archive-events.php:41
+#: simple-event-calendar.php:68 include/sec-widget.php:18
+#: templates/archive-events.php:43
 msgid "Upcoming events"
 msgstr "Uppkommande händelser "
 
@@ -77,69 +80,99 @@ msgstr "Uppkommande händelser "
 msgid "multiple days"
 msgstr "Flera dagar "
 
-#: include/sec-meta-boxes.php:17
+#: include/sec-meta-boxes.php:20
 msgid "Events date and time"
 msgstr "Datum och tid "
 
-#: include/sec-meta-boxes.php:24
+#: include/sec-meta-boxes.php:27
 msgid "Events venue and address info"
 msgstr "Evenemangslokal och adressinformation "
 
-#: include/sec-meta-boxes.php:40
+#: include/sec-meta-boxes.php:43
 msgid "Date"
 msgstr "Datum"
 
-#: include/sec-meta-boxes.php:46
+#: include/sec-meta-boxes.php:49
 msgid "Time"
 msgstr "Tid"
 
-#: include/sec-meta-boxes.php:52
+#: include/sec-meta-boxes.php:55
 msgid "Leave the time blank if the event lasts a whole day."
-msgstr ""
+msgstr "Lämna tiden tom om evenemanget varar en hel dag."
 
-#: include/sec-meta-boxes.php:65
+#: include/sec-meta-boxes.php:68
 msgid "Venue name"
-msgstr ""
+msgstr "Platsnamn "
 
-#: include/sec-meta-boxes.php:69
+#: include/sec-meta-boxes.php:72
 msgid "Address"
-msgstr ""
+msgstr "Adress"
 
-#: include/sec-meta-boxes.php:73
+#: include/sec-meta-boxes.php:76
 msgid "Postal Code"
-msgstr ""
+msgstr "Postnummer"
 
-#: include/sec-meta-boxes.php:77
+#: include/sec-meta-boxes.php:80
 msgid "City"
-msgstr ""
+msgstr "Stad"
 
-#: include/sec-meta-boxes.php:81
+#: include/sec-meta-boxes.php:84
 msgid "Map link"
-msgstr ""
+msgstr "Kartlänk"
 
-#: include/sec-meta-boxes.php:85
+#: include/sec-meta-boxes.php:88
 msgid "Specify the venues address info, all fields are optional."
-msgstr ""
+msgstr "Ange platsadressinformation, alla fält är valfria. "
 
-#: include/sec-meta-boxes.php:86
+#: include/sec-meta-boxes.php:89
 msgid ""
 "Map link can be any shareable map link containing the address. Or a zoom or "
 "teams invite link."
 msgstr ""
+"Kartlänk kan vara vilken delbar kartlänk som helst som innehåller adressen. "
+"Eller en länk för zoom eller teaminbjudan. "
 
-#: templates/archive-events.php:39
+#: include/sec-widget.php:20
+msgid "Show upcoming events from event calendar"
+msgstr "Visa kommande evenemang från evenemangskalendern "
+
+#: include/sec-widget.php:69 include/sec-widget.php:159
+msgid "Show all events"
+msgstr "Visa alla händelser "
+
+#: include/sec-widget.php:84
+msgid "Title:"
+msgstr "Titel:"
+
+#: include/sec-widget.php:89
+msgid "Show dates"
+msgstr "Visa datum"
+
+#: include/sec-widget.php:93
+msgid "Events to show:"
+msgstr "Händelser att visa "
+
+#: templates/archive-events.php:41
 msgid "Past events"
-msgstr ""
+msgstr "Tidigare händelser "
 
-#: templates/archive-events.php:90
+#: templates/archive-events.php:103
+msgid "Previous events"
+msgstr "Tidigare händelser "
+
+#: templates/archive-events.php:104
+msgid "Next events"
+msgstr "Nästa händelser "
+
+#: templates/archive-events.php:114
 msgid "Show upcoming events"
 msgstr "Visa kommande händelser"
 
-#: templates/archive-events.php:92
+#: templates/archive-events.php:116
 msgid "Show past events"
 msgstr "Visa tidigare händelser "
 
-#: templates/single-events.php:17
+#: templates/single-events.php:16
 msgid "Date and time"
 msgstr "Datum och tid "
 
